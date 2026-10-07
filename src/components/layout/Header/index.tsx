@@ -5,7 +5,7 @@ export const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <header className="fixed top-0 left-0 w-full bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800 z-50">
+        <header className="sticky top-0 w-full bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800 z-50">
             <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
                 <a href="#"
                     className="text-zinc-100 font-bold text-lg hover:text-blue-400 transition-colors">
@@ -20,12 +20,34 @@ export const Header = () => {
                 </nav>
 
                 <button onClick={() => setIsOpen(!isOpen)}
-                    className="md:hidden bg-zinc-400 hover:text-zinc-100 focus:outline-none">
+                    className="md:hidden bg-zinc-400 rounded-2xl focus:outline-none px-4 border border-zinc-300">
                     {isOpen ? "Fechar" : "Menu"}
                 </button>
-                
-
             </div>
+            {isOpen && (
+                <div className="md:hidden text-zinc-900 border-b border-zinc-800 px-4 py-4 flex flex-col gap-4">
+                    <a 
+                    href="#sobre"
+                    onClick={() => setIsOpen(false)}
+                    className="text-zinc-300 border-b border-zinc-900 pl-4 pb-4"
+                    >Sobre</a>
+                    <a 
+                    href="#skills"
+                    onClick={() => setIsOpen(false)}
+                    className="text-zinc-300 border-b border-zinc-900 pl-4 pb-4"
+                    >Skills</a>
+                    <a 
+                    href="#projetos"
+                    onClick={() => setIsOpen(false)}
+                    className="text-zinc-300 border-b border-zinc-900 pl-4 pb-4"
+                    >Projetos</a>
+                    <a 
+                    href="#contato"
+                    onClick={() => setIsOpen(false)}
+                    className="text-zinc-300 pl-4"
+                    >Contato</a>
+                </div>
+            )}
         </header>
     )
 }
