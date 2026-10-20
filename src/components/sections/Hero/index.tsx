@@ -6,10 +6,8 @@ export const Hero = () => {
     return (
         <section id="sobre" className="min-h-[calc(100vh-4rem)] flex items-center justify-center py-16">
             <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
-                
-                {/* Lado Esquerdo: Textos e Botões */}
                 <div className="lg:col-span-7 flex flex-col items-start gap-6">
-                    <span className="px-3 py-1 bg-primary/10 text-primary border border-primary/20 rounded-full text-xs font-semibold uppercase tracking-wider">
+                    <span className="px-3 py-1 bg-primary/15 text-primary border border-primary/30 rounded-full text-xs font-semibold uppercase tracking-wider animate-pulse shadow-sm shadow-primary/10">
                         Disponível para novos projetos
                     </span>
 
@@ -18,7 +16,7 @@ export const Hero = () => {
                     </h1>
 
                     <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                        Desenvolvedor <span className="text-primary">Frontend</span> especializado em transformar ideias em experiências!
+                        Desenvolvedor <span className="text-primary">Frontend</span> focado em criar interfaces modernas, acessíveis e responsivas com React e TypeScript.
                     </p>
 
                     <div className="flex flex-wrap items-center gap-4 pt-2">
@@ -29,7 +27,7 @@ export const Hero = () => {
 
                         <a href="#contato"
                             className="inline-flex items-center gap-2 px-6 py-3 bg-card hover:bg-muted text-card-foreground border border-border font-medium rounded-xl transition-colors">
-                            <FileText className="w-4 h-4" /> Contato Direto
+                            <FileText className="w-4 h-4" /> Entre em contato
                         </a>
                     </div>
                 </div>
