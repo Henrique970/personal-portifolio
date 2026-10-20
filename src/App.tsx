@@ -1,6 +1,7 @@
 import { Header } from "./components/layout/Header"
 import { Footer } from "./components/layout/Footer"
 import { Hero } from "./components/sections/Hero"
+import { Skills } from "./components/sections/Skills"
 
 export function App() {
   return (
@@ -8,6 +9,7 @@ export function App() {
       <Header />
       <main className="grow pt-16">
         <Hero />
+        <Skills />
       </main>
       <Footer />
     </div>
