@@ -1,6 +1,6 @@
 import { ArrowRight, Mail } from "lucide-react";
 import { TerminalCard } from "../../TerminalCard";
-import { formattedCodeString } from "../../../data/developerProfile";
+import { formattedCodeString } from "../../../data/developerProfileData";
 
 export const Hero = () => {
     return (

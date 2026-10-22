@@ -10,4 +10,15 @@ export interface TerminalCardProps {
     codeString: string;
     typingSpeed?: number;
     filename: string;
+};
+
+interface SkillItem {
+    name: string;
+    icon: string;
+    level: string;
+};
+
+export interface SkillCategory {
+    categoryName: string;
+    skills: SkillItem[];
 }
