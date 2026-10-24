@@ -33,7 +33,7 @@ export const skillsData: SkillCategory[] = [
     {
         categoryName: "IAs & Ecossistema",
         skills: [
-            { name: "Google Gemini", icon: "gemini", level: "Avançado" },
+            { name: "Google Gemini e Antigravity", icon: "gemini", level: "Avançado" },
             { name: "Claude Code", icon: "claude", level: "Avançado" },
             { name: "Lovable.dev", icon: "lovable", level: "Avançado" },
             { name: "GitHub Copilot", icon: "copilot", level: "Avançado" },

@@ -1,10 +1,11 @@
 import { skillsData } from "../../../data/skillsData";
+import { ArrowUpRight, Cpu, Database, Layout, Layers, Sparkles } from "lucide-react";
 import {
     SiReact, SiTypescript, SiTailwindcss, SiNextdotjs,
     SiJavascript, SiNodedotjs, SiGit, SiVite, SiFigma, SiHtml5, SiVscodium,
     SiGithubcopilot
 } from "react-icons/si";
-import { ArrowUpRight, Cpu, Database, Layout, Layers, Sparkles } from "lucide-react";
+
 
 const getSkillIcon = (iconName: string) => {
     switch (iconName) {
@@ -101,8 +102,8 @@ export const Skills = () => {
                                                 <div
                                                     key={skill.icon}
                                                     className={`group/skill relative overflow-hidden rounded-2xl border p-4 transition-all duration-300 motion-reduce:transition-none sm:p-5 hover:-translate-y-1 hover:scale-[1.02] hover:shadow-xl ${isReact
-                                                            ? "border-cyan-500/30 bg-gradient-to-br from-cyan-500/10 via-cyan-500/5 to-transparent hover:border-cyan-400 hover:shadow-cyan-500/20"
-                                                            : "border-blue-500/30 bg-gradient-to-br from-blue-500/10 via-blue-500/5 to-transparent hover:border-blue-400 hover:shadow-blue-500/20"
+                                                            ? "border-cyan-500/30 bg-linear-to-br from-cyan-500/10 via-cyan-500/5 to-transparent hover:border-cyan-400 hover:shadow-cyan-500/20"
+                                                            : "border-blue-500/30 bg-linear-to-br from-blue-500/10 via-blue-500/5 to-transparent hover:border-blue-400 hover:shadow-blue-500/20"
                                                         }`}
                                                 >
                                                     {/* Brilho de fundo no Hover */}
