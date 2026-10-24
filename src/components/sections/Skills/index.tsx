@@ -94,25 +94,39 @@ export const Skills = () => {
 
                                 {featuredSkills.length > 0 && (
                                     <div className="relative mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2">
-                                        {featuredSkills.map((skill) => (
-                                            <div
-                                                key={skill.icon}
-                                                className="rounded-2xl border border-primary/20 bg-linear-to-br from-primary/10 via-primary/4 to-transparent p-4 transition-colors duration-300 motion-reduce:transition-none group-hover:border-primary/30 sm:p-5"
-                                            >
-                                                <div className="flex items-center justify-between gap-3">
-                                                    <span className="flex h-11 w-11 items-center justify-center rounded-xl border border-border/80 bg-background/80 shadow-sm transition-transform duration-300 motion-safe:group-hover:-translate-y-0.5 motion-reduce:transition-none">
-                                                        {getSkillIcon(skill.icon)}
-                                                    </span>
-                                                    <span className="rounded-full border border-primary/20 bg-background/60 px-2.5 py-1 font-mono text-[10px] text-muted-foreground">
-                                                        {skill.level}
-                                                    </span>
+                                        {featuredSkills.map((skill) => {
+                                            const isReact = skill.icon === "react";
+
+                                            return (
+                                                <div
+                                                    key={skill.icon}
+                                                    className={`group/skill relative overflow-hidden rounded-2xl border p-4 transition-all duration-300 motion-reduce:transition-none sm:p-5 hover:-translate-y-1 hover:scale-[1.02] hover:shadow-xl ${isReact
+                                                            ? "border-cyan-500/30 bg-gradient-to-br from-cyan-500/10 via-cyan-500/5 to-transparent hover:border-cyan-400 hover:shadow-cyan-500/20"
+                                                            : "border-blue-500/30 bg-gradient-to-br from-blue-500/10 via-blue-500/5 to-transparent hover:border-blue-400 hover:shadow-blue-500/20"
+                                                        }`}
+                                                >
+                                                    {/* Brilho de fundo no Hover */}
+                                                    <div className={`pointer-events-none absolute -right-8 -bottom-8 h-24 w-24 rounded-full blur-2xl transition-opacity duration-300 opacity-0 group-hover/skill:opacity-100 ${isReact ? "bg-cyan-400/30" : "bg-blue-500/30"
+                                                        }`} />
+
+                                                    <div className="flex items-center justify-between gap-3 relative z-10">
+                                                        <span className={`flex h-11 w-11 items-center justify-center rounded-xl border border-border/80 bg-background/80 shadow-sm transition-transform duration-500 group-hover/skill:scale-110 ${isReact ? "group-hover/skill:rotate-180" : "group-hover/skill:-translate-y-0.5"
+                                                            }`}>
+                                                            {getSkillIcon(skill.icon)}
+                                                        </span>
+                                                        <span className="rounded-full border border-primary/20 bg-background/60 px-2.5 py-1 font-mono text-[10px] text-muted-foreground">
+                                                            {skill.level}
+                                                        </span>
+                                                    </div>
+
+                                                    <p className="mt-4 text-base font-semibold text-foreground relative z-10">{skill.name}</p>
+                                                    <p className={`mt-1 font-mono text-[10px] uppercase tracking-[0.15em] transition-colors ${isReact ? "text-cyan-400" : "text-blue-400"
+                                                        }`}>
+                                                        Tecnologia em destaque
+                                                    </p>
                                                 </div>
-                                                <p className="mt-4 text-base font-semibold text-foreground">{skill.name}</p>
-                                                <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.15em] text-primary/80">
-                                                    Tecnologia em destaque
-                                                </p>
-                                            </div>
-                                        ))}
+                                            );
+                                        })}
                                     </div>
                                 )}
 
