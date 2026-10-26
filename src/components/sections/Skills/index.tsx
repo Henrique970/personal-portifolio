@@ -51,7 +51,7 @@ export const Skills = () => {
                 <header className="mx-auto mb-12 max-w-3xl text-center sm:mb-16">
                     <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">
                         <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-accent" />
-                        Tecnologias & habilidades
+                        Tecnologias & Habilidades
                     </span>
                     <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-foreground text-balance sm:text-4xl md:text-5xl">
                         Meu stack técnico <span className="text-primary">&</span> ecossistema
@@ -76,7 +76,6 @@ export const Skills = () => {
                                 className={`group relative flex min-w-0 flex-col overflow-hidden rounded-3xl border border-border/80 bg-card/80 p-5 shadow-lg shadow-foreground/3 backdrop-blur-sm transition duration-300 motion-reduce:transition-none hover:-translate-y-1 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/10 sm:p-6 ${gridSpans[index] ?? "lg:col-span-6"}`}
                             >
                                 <div
-                                    aria-hidden="true"
                                     className="pointer-events-none absolute -right-16 -top-20 h-48 w-48 rounded-full bg-primary/10 opacity-0 blur-3xl transition-opacity duration-500 motion-reduce:transition-none group-hover:opacity-100"
                                 />
                                 <div className="relative flex items-start justify-between gap-4">
@@ -102,11 +101,10 @@ export const Skills = () => {
                                                 <div
                                                     key={skill.icon}
                                                     className={`group/skill relative overflow-hidden rounded-2xl border p-4 transition-all duration-300 motion-reduce:transition-none sm:p-5 hover:-translate-y-1 hover:scale-[1.02] hover:shadow-xl ${isReact
-                                                            ? "border-cyan-500/30 bg-linear-to-br from-cyan-500/10 via-cyan-500/5 to-transparent hover:border-cyan-400 hover:shadow-cyan-500/20"
-                                                            : "border-blue-500/30 bg-linear-to-br from-blue-500/10 via-blue-500/5 to-transparent hover:border-blue-400 hover:shadow-blue-500/20"
+                                                        ? "border-cyan-500/30 bg-linear-to-br from-cyan-500/10 via-cyan-500/5 to-transparent hover:border-cyan-400 hover:shadow-cyan-500/20"
+                                                        : "border-blue-500/30 bg-linear-to-br from-blue-500/10 via-blue-500/5 to-transparent hover:border-blue-400 hover:shadow-blue-500/20"
                                                         }`}
                                                 >
-                                                    {/* Brilho de fundo no Hover */}
                                                     <div className={`pointer-events-none absolute -right-8 -bottom-8 h-24 w-24 rounded-full blur-2xl transition-opacity duration-300 opacity-0 group-hover/skill:opacity-100 ${isReact ? "bg-cyan-400/30" : "bg-blue-500/30"
                                                         }`} />
 
