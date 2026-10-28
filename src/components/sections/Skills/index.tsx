@@ -48,9 +48,9 @@ export const Skills = () => {
             </div>
 
             <div className="mx-auto max-w-6xl px-4">
-                <header className="mx-auto mb-12 max-w-3xl text-center sm:mb-16">
+                <div className="mx-auto mb-12 max-w-3xl text-center sm:mb-16">
                     <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">
-                        <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-accent" />
+                        <span aria-hidden="true" className="w-2 h-2 rounded-full bg-success animate-pulse motion-reduce:animate-none" />
                         Tecnologias & Habilidades
                     </span>
                     <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-foreground text-balance sm:text-4xl md:text-5xl">
@@ -59,7 +59,7 @@ export const Skills = () => {
                     <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
                         Ferramentas, linguagens e tecnologias que impulsionam minha produtividade e transformam ideias em experiências digitais.
                     </p>
-                </header>
+                </div>
 
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-12 lg:gap-6">
                     {skillsData.map((group, index) => {

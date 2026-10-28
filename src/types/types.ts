@@ -40,3 +40,13 @@ export interface ProjectItem {
 export interface ProjectProps {
     project: ProjectItem;
 }
+
+// Resume
+export interface DiplomaItem {
+    id: string;
+    title: string;
+    institution: string;
+    issueDate: string;
+    image: string;
+    category: string;
+}
