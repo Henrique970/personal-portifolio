@@ -1,12 +1,19 @@
 import { Code2, Mail } from 'lucide-react';
 import { FaLinkedin } from 'react-icons/fa';
 import { SiGithub } from 'react-icons/si';
+import { scrollToSection } from '../../../utils/scroll';
+
+const currentYear = new Date().getFullYear();
 
 export const Footer = () => {
-    const currentYear = new Date().getFullYear();
+
+    const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+        e.preventDefault();
+        scrollToSection(href);
+    };
 
     return (
-        <footer className="bg-background border-t border-border text-muted-foreground py-12">
+        <footer id="contato" className="scroll-mt-20 bg-background border-t border-border text-muted-foreground py-12">
             <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6">
                 
                 {/* Lado Esquerdo: Logo / Assinatura */}
@@ -17,16 +24,28 @@ export const Footer = () => {
                     </span>
                 </div>
 
-                {/* Centro: Links Rápidos */}
+                {/* Centro: Links Rápidos com Rolagem Suave */}
                 <nav className="flex items-center gap-6 text-sm">
                     <a href="#sobre"
-                        className="hover:text-foreground transition-colors">Sobre</a>
+                        onClick={(e) => handleNavClick(e, "#sobre")}
+                        className="hover:text-foreground transition-colors cursor-pointer">
+                        Sobre
+                    </a>
                     <a href="#skills"
-                        className="hover:text-foreground transition-colors">Skills</a>
+                        onClick={(e) => handleNavClick(e, "#skills")}
+                        className="hover:text-foreground transition-colors cursor-pointer">
+                        Skills
+                    </a>
                     <a href="#projetos"
-                        className="hover:text-foreground transition-colors">Projetos</a>
+                        onClick={(e) => handleNavClick(e, "#projetos")}
+                        className="hover:text-foreground transition-colors cursor-pointer">
+                        Projetos
+                    </a>
                     <a href="#contato"
-                        className="hover:text-foreground transition-colors">Contato</a>
+                        onClick={(e) => handleNavClick(e, "#contato")}
+                        className="hover:text-foreground transition-colors cursor-pointer">
+                        Contato
+                    </a>
                 </nav>
 
                 {/* Lado Direito: Redes Sociais */}
@@ -60,5 +79,5 @@ export const Footer = () => {
                 &copy; {currentYear} • Todos os direitos reservados.
             </div>
         </footer>
-    )
-}
+    );
+};

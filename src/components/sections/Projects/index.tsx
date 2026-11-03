@@ -15,7 +15,7 @@ export const Projects = () => {
     return (
         <section
             id="projetos"
-            className="relative isolate overflow-hidden bg-background py-20 sm:py-24"
+            className="scroll-mt-20 relative isolate overflow-hidden bg-background py-20 sm:py-24"
         >
             {/* Efeitos de fundo: degradê e brilhos sutis */}
             <div

@@ -40,7 +40,7 @@ const gridSpans = [
 
 export const Skills = () => {
     return (
-        <section id="skills" className="relative isolate overflow-hidden bg-background py-20 sm:py-24">
+        <section id="skills" className="scroll-mt-20 relative isolate overflow-hidden bg-background py-20 sm:py-24">
             <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
                 <div className="absolute -top-40 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-primary/10 blur-3xl" />
                 <div className="absolute right-0 top-1/2 h-72 w-72 translate-x-1/2 rounded-full bg-accent/10 blur-3xl" />

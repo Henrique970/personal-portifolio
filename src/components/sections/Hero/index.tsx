@@ -4,7 +4,7 @@ import { formattedCodeString } from "../../../data/developerProfileData";
 
 export const Hero = () => {
     return (
-        <section id="sobre" className="min-h-[calc(100svh-8rem)] flex items-center justify-center py-12 sm:py-16">
+        <section id="sobre" className="scroll-mt-20 min-h-[calc(100svh-8rem)] flex items-center justify-center py-12 sm:py-16">
             <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center w-full">
                 <div className="lg:col-span-7 flex flex-col items-start gap-6">
                     <span className="inline-flex items-center gap-2 px-3 py-1 bg-primary/15 text-primary-400 border border-primary/30 rounded-full text-xs font-semibold uppercase tracking-wider shadow-sm shadow-primary/10">
