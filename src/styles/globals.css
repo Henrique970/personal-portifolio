@@ -203,3 +203,17 @@ html {
   --color-input: var(--input);
   --color-ring: var(--ring);
 }
+
+@keyframes blink {
+   100% {
+      opacity: 1;
+   }
+
+   50% {
+      opacity: 0.5;
+   }
+}
+
+.animate-blink {
+   animation: blink 1.9s ease-in-out infinite;
+}

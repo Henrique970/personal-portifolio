@@ -52,7 +52,7 @@ export const TerminalCard = ({
                 </span>
             </div>
 
-            <pre className="text-xs md:text-sm font-mono text-muted-foreground whitespace-pre-wrap break-words min-h-55">
+            <pre className="text-xs md:text-sm font-mono text-muted-foreground whitespace-pre-wrap wrap-break-word min-h-55">
                 <code>
                     {prefersReducedMotion ? codeString : displayedText}
                     <span aria-hidden="true" className="animate-pulse motion-reduce:animate-none text-primary font-bold">|</span>

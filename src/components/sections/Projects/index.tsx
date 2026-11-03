@@ -1,6 +1,8 @@
 
 import { projectsData } from "../../../data/projectsData";
 import { ProjectCard } from "./ProjectCard";
+import { PrimaryGradient } from "../../PrimaryGradient"
+import { SectionBadge } from "../../SectionBadge";
 
 export const Projects = () => {
     const featuredIndex = projectsData.findIndex((project) => project.featured);
@@ -17,41 +19,13 @@ export const Projects = () => {
             id="projetos"
             className="scroll-mt-20 relative isolate overflow-hidden bg-background py-20 sm:py-24"
         >
-            {/* Efeitos de fundo: degradê e brilhos sutis */}
-            <div
-                aria-hidden="true"
-                className="pointer-events-none absolute inset-0 -z-10 overflow-hidden"
-            >
-                {/* Brilho roxo central superior */}
-                <div
-                    className="absolute -top-40 left-1/2 h-96 w-96
-                    -translate-x-1/2 rounded-full bg-primary/10 blur-3xl"
-                />
-
-                {/* Brilho secundário lateral */}
-                <div
-                    className="absolute right-0 top-1/3 h-72 w-72
-                    translate-x-1/2 rounded-full bg-accent/10 blur-3xl"
-                />
-
-                {/* Transição suave para o fundo */}
-                <div
-                    className="absolute inset-0
-                    bg-[linear-gradient(to_right,transparent_0%,var(--background)_90%)]
-                    opacity-40"
-                />
-            </div>
+            <PrimaryGradient />
 
             <div className="relative z-10 mx-auto max-w-6xl px-4">
                 {/* Cabeçalho da seção */}
                 <div className="mx-auto mb-12 max-w-3xl text-center sm:mb-16">
-                    <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">
-                        <span
-                            aria-hidden="true"
-                            className="h-2 w-2 rounded-full bg-success animate-pulse motion-reduce:animate-none"
-                        />
-                        Portfólio
-                    </span>
+                    
+                    <SectionBadge>Portifólio</SectionBadge>
 
                     <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-foreground text-balance sm:text-4xl md:text-5xl">
                         Projetos <span className="text-primary">em</span> Destaque
