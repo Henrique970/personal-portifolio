@@ -17,7 +17,7 @@ export const Resume = () => {
                     <AdCard>Credenciais e Contato</AdCard>
                     
                     <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-foreground text-balance sm:text-4xl md:text-5xl">
-                        Currículo, Diplomas <span className="text-primary">&</span> Contato
+                        Currículo<span className="text-primary">,</span> Diplomas <span className="text-primary">&</span> Contato
                     </h2>
                     <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
                         Visualize meus diplomas, baixe meu currículo profissional e entre em contato diretamente pelos meus canais.

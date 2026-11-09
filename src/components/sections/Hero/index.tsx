@@ -21,12 +21,16 @@ export const Hero = () => {
                     </p>
 
                     <div className="flex flex-wrap items-center gap-4 pt-2">
+
                         <a href="https://github.com/Henrique970"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-2 px-6 py-3 bg-primary-700 text-primary-foreground font-medium rounded-xl hover:bg-primary-800 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring transition-colors shadow-lg shadow-primary/25">
-                            Ver projetos no GitHub <ArrowRight aria-hidden="true" className="w-4 h-4" />
+                            className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary-700 text-primary-foreground font-medium rounded-xl hover:bg-primary-800 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring transition-colors shadow-lg shadow-primary/25"
+                        >
+                            Ver projetos no GitHub
+                            <ArrowRight aria-hidden="true" className="w-4 h-4 shrink-0" />
                         </a>
+
 
                         <a href="mailto:henriquee1560@gmail.com"
                             className="inline-flex items-center gap-2 px-6 py-3 bg-card hover:bg-muted text-card-foreground border border-border font-medium rounded-xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring transition-colors">
