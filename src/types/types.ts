@@ -1,9 +1,9 @@
 // Hero
 export interface DeveloperProfile {
     name: string;
-    role: string;
-    stack: string[];
-    focus: string;
+    mindset: string;
+    approach: string[];
+    priorities: string[];
     status: string;
 };
 

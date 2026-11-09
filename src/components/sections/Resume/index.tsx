@@ -1,7 +1,7 @@
 import { Award, Download, Eye, GraduationCap, ExternalLink, MessageCircle, Camera, Mail, GitBranch } from "lucide-react";
 import { diplomasData } from "../../../data/diplomasData";
 import { PrimaryGradient } from "../../PrimaryGradient";
-import { SectionBadge } from "../../SectionBadge";
+import { AdCard } from "../../AdCard";
 
 export const Resume = () => {
     return (
@@ -14,7 +14,7 @@ export const Resume = () => {
                 {/* Cabeçalho */}
                 <div className="mx-auto mb-16 max-w-3xl text-center">
 
-                    <SectionBadge>Credenciais e Contato</SectionBadge>
+                    <AdCard>Credenciais e Contato</AdCard>
                     
                     <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-foreground text-balance sm:text-4xl md:text-5xl">
                         Currículo, Diplomas <span className="text-primary">&</span> Contato

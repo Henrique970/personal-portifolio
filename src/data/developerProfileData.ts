@@ -1,24 +1,30 @@
 import type { DeveloperProfile } from "../types/types";
 
 export const developerProfileData: DeveloperProfile = {
-    name: "Henrique",
-    role: "Frontend Developer",
-    stack: [
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-        "Node.js"
-    ],
-    focus: "Clean Code & UX",
-    status: "Coding the future..."
+  name: "Henrique",
+  mindset: "Frontend Developer",
+  approach: [
+    "Understand the problem",
+    "Plan the solution",
+    "Continuously improve"
+  ],
+  priorities: [
+    "Clean Code",
+    "User Experience",
+  ],
+  status: "Always evolving..."
 };
 
-export const formattedCodeString: string = `const developer: DeveloperProfile = {
+
+export const formattedCodeString: string = `
+const developer: DeveloperProfile = {
   name: "${developerProfileData.name}",
-  role: "${developerProfileData.role}",
-  stack: [
-${developerProfileData.stack.map(item => `    "${item}"`).join(',\n')}
+  mindset: "${developerProfileData.mindset}",
+  approach: [
+${developerProfileData.approach.map(item => `    "${item}"`).join(',\n')}
   ],
-  focus: "${developerProfileData.focus}",
+  priorities: [
+${developerProfileData.priorities.map(item => `    "${item}"`).join(',\n')}
+  ],
   status: "${developerProfileData.status}"
 };`;

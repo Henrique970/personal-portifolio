@@ -4,7 +4,7 @@ interface SectionBadgeProps {
     children: ReactNode;
 }
 
-export function SectionBadge({ children }: SectionBadgeProps) {
+export function AdCard({ children }: SectionBadgeProps) {
     return (
         <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">
             <span

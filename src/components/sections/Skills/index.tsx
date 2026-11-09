@@ -6,7 +6,7 @@ import {
     SiGithubcopilot
 } from "react-icons/si";
 import { PrimaryGradient } from "../../PrimaryGradient";
-import { SectionBadge } from "../../SectionBadge";
+import { AdCard } from "../../AdCard";
 
 
 const getSkillIcon = (iconName: string) => {
@@ -49,7 +49,7 @@ export const Skills = () => {
             <div className="mx-auto max-w-6xl px-4">
                 <div className="mx-auto mb-12 max-w-3xl text-center sm:mb-16">
                     
-                    <SectionBadge>Tecnologias & Habilidades</SectionBadge>
+                    <AdCard>Tecnologias & Habilidades</AdCard>
                     
                     <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-foreground text-balance sm:text-4xl md:text-5xl">
                         Meu stack técnico <span className="text-primary">&</span> ecossistema

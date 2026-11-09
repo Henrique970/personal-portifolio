@@ -2,7 +2,7 @@
 import { projectsData } from "../../../data/projectsData";
 import { ProjectCard } from "./ProjectCard";
 import { PrimaryGradient } from "../../PrimaryGradient"
-import { SectionBadge } from "../../SectionBadge";
+import { AdCard } from "../../AdCard";
 
 export const Projects = () => {
     const featuredIndex = projectsData.findIndex((project) => project.featured);
@@ -25,7 +25,7 @@ export const Projects = () => {
                 {/* Cabeçalho da seção */}
                 <div className="mx-auto mb-12 max-w-3xl text-center sm:mb-16">
                     
-                    <SectionBadge>Portifólio</SectionBadge>
+                    <AdCard>Portifólio</AdCard>
 
                     <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-foreground text-balance sm:text-4xl md:text-5xl">
                         Projetos <span className="text-primary">em</span> Destaque
