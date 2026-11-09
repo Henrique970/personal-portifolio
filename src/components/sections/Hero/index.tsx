@@ -1,5 +1,5 @@
 import { ArrowRight, Mail } from "lucide-react";
-import { TerminalCard } from "../../TerminalCard";
+import { TerminalCard } from "../../ui/TerminalCard";
 import { formattedCodeString } from "../../../data/developerProfileData";
 
 export const Hero = () => {

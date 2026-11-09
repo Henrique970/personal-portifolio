@@ -1,8 +1,8 @@
 
 import { projectsData } from "../../../data/projectsData";
 import { ProjectCard } from "./ProjectCard";
-import { PrimaryGradient } from "../../PrimaryGradient"
-import { AdCard } from "../../AdCard";
+import { PrimaryGradient } from "../../ui/PrimaryGradient"
+import { AdCard } from "../../ui/AdCard";
 
 export const Projects = () => {
     const featuredIndex = projectsData.findIndex((project) => project.featured);

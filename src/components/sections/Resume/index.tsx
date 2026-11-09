@@ -1,7 +1,7 @@
 import { Award, Download, Eye, GraduationCap, ExternalLink, MessageCircle, Camera, Mail, GitBranch } from "lucide-react";
 import { diplomasData } from "../../../data/diplomasData";
-import { PrimaryGradient } from "../../PrimaryGradient";
-import { AdCard } from "../../AdCard";
+import { PrimaryGradient } from "../../ui/PrimaryGradient";
+import { AdCard } from "../../ui/AdCard";
 
 export const Resume = () => {
     return (

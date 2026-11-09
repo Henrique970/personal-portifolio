@@ -5,8 +5,8 @@ import {
     SiJavascript, SiNodedotjs, SiGit, SiVite, SiFigma, SiHtml5, SiVscodium,
     SiGithubcopilot
 } from "react-icons/si";
-import { PrimaryGradient } from "../../PrimaryGradient";
-import { AdCard } from "../../AdCard";
+import { PrimaryGradient } from "../../ui/PrimaryGradient";
+import { AdCard } from "../../ui/AdCard";
 
 
 const getSkillIcon = (iconName: string) => {

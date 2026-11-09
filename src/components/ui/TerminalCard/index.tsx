@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import type { TerminalCardProps } from "../../types/types";
+import type { TerminalCardProps } from "../../../types/types";
 
 export const TerminalCard = ({
     codeString,
